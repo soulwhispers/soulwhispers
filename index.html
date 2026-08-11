@@ -31,7 +31,7 @@
   </header>
 
   <!-- ============ HERO ============ -->
-  <section class="hero feature feature--right" id="home">
+  <section class="hero feature feature--left" id="home">
 
     <div class="feature-photo">
       <img
@@ -40,17 +40,20 @@
         loading="lazy"
         onerror="this.parentElement.classList.add('photo--fallback'); this.remove();"
       />
+      <div class="feature-photo-overlay">
+        <h1 class="hero-claim">Raum für Gesundheit, mitten im Alltag</h1>
+      </div>
     </div>
 
-    <div class="feature-card">
-      <img class="feature-logo" src="assets/logo.png" alt="SoulWhispers" />
-      <h1 class="hero-claim">Raum für Gesundheit,<br>mitten im Alltag</h1>
-      <p class="hero-intro">
-        Gesundheit beginnt oft im Kleinen – in den Momenten, die du dir und deiner
-        Familie schenkst. SoulWhispers begleitet dich dabei, mehr Achtsamkeit,
-        Wohlbefinden und Natürlichkeit in euren Alltag zu bringen. Schritt für
-        Schritt, ganz ohne Druck.
-      </p>
+    <div class="feature-content">
+      <div class="feature-card">
+        <p class="hero-intro">
+          Gesundheit beginnt oft im Kleinen – in den Momenten, die du dir und deiner
+          Familie schenkst. SoulWhispers begleitet dich dabei, mehr Achtsamkeit,
+          Wohlbefinden und Natürlichkeit in euren Alltag zu bringen. Schritt für
+          Schritt, ganz ohne Druck.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -74,13 +77,15 @@
           onerror="this.parentElement.classList.add('photo--fallback'); this.remove();"
         />
       </div>
-      <div class="feature-card">
-        <p>
-          doTERRA-Öle begleiten euch durch ganz unterschiedliche Momente des Tages –
-          beim Kochen, beim Entspannen, beim Zur-Ruhe-Kommen am Abend. Es geht nicht
-          um große Veränderungen, sondern um kleine, achtsame Rituale, die sich
-          leicht in euren Alltag einfügen.
-        </p>
+      <div class="feature-content">
+        <div class="feature-card">
+          <p>
+            doTERRA-Öle begleiten euch durch ganz unterschiedliche Momente des Tages –
+            beim Kochen, beim Entspannen, beim Zur-Ruhe-Kommen am Abend. Es geht nicht
+            um große Veränderungen, sondern um kleine, achtsame Rituale, die sich
+            leicht in euren Alltag einfügen.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -168,31 +173,33 @@
       />
     </div>
 
-    <div class="feature-card feature-card--wide">
-      <span class="eyebrow">Business</span>
-      <h2>Business mit SoulWhispers</h2>
-      <p>
-        Vielleicht ist aus deiner Begeisterung für die Öle schon mehr geworden als
-        ein Hobby. Mit SoulWhispers startest du in einem Team, das dich ehrlich
-        begleitet – ohne Druck, dafür mit viel Raum für deinen eigenen Weg.
-      </p>
+    <div class="feature-content">
+      <div class="feature-card feature-card--wide">
+        <span class="eyebrow">Business</span>
+        <h2>Business mit SoulWhispers</h2>
+        <p>
+          Vielleicht ist aus deiner Begeisterung für die Öle schon mehr geworden als
+          ein Hobby. Mit SoulWhispers startest du in einem Team, das dich ehrlich
+          begleitet – ohne Druck, dafür mit viel Raum für deinen eigenen Weg.
+        </p>
 
-      <div class="business-points">
-        <div>
-          <h3>Flexibilität</h3>
-          <p>Du gestaltest dein Tempo selbst – passend zu deinem Familienalltag.</p>
+        <div class="business-points">
+          <div>
+            <h3>Flexibilität</h3>
+            <p>Du gestaltest dein Tempo selbst – passend zu deinem Familienalltag.</p>
+          </div>
+          <div>
+            <h3>Gemeinschaft</h3>
+            <p>Ein Team, das sich gegenseitig unterstützt und ehrlich austauscht.</p>
+          </div>
+          <div>
+            <h3>Weiterentwicklung</h3>
+            <p>Wachse an dem, was dir wichtig ist – persönlich und fachlich.</p>
+          </div>
         </div>
-        <div>
-          <h3>Gemeinschaft</h3>
-          <p>Ein Team, das sich gegenseitig unterstützt und ehrlich austauscht.</p>
-        </div>
-        <div>
-          <h3>Weiterentwicklung</h3>
-          <p>Wachse an dem, was dir wichtig ist – persönlich und fachlich.</p>
-        </div>
+
+        <a class="text-link" href="team/">Lerne unser Team kennen →</a>
       </div>
-
-      <a class="text-link" href="team/">Lerne unser Team kennen →</a>
     </div>
   </section>
 
