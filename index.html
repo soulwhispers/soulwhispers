@@ -14,38 +14,88 @@
 </head>
 <body>
 
-  <!-- ============ HERO ============ -->
-  <header class="hero">
-    <div class="hero-inner">
-
-      <!--
-        Platzhalter-Wortmarke, nachgebaut in HTML/CSS (kein Logo-Bild vorhanden).
-        Sobald die finale Logo-Datei (SVG/PNG) verfügbar ist, kann sie hier
-        einfach als <img> eingesetzt werden – die Struktur bleibt gleich.
-      -->
-      <div class="wordmark" role="img" aria-label="SoulWhispers">
-        <span class="wordmark-main">soul</span>
-        <span class="wordmark-sub">Whispers</span>
-      </div>
-
-      <h1 class="hero-claim">Raum für Gesundheit, mitten im Alltag</h1>
-
-      <p class="hero-intro">
-        Gesundheit beginnt oft im Kleinen – in den Momenten, die du dir und deiner
-        Familie schenkst. SoulWhispers begleitet dich dabei, mehr Achtsamkeit,
-        Wohlbefinden und Natürlichkeit in euren Alltag zu bringen. Schritt für
-        Schritt, ganz ohne Druck.
-      </p>
-
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-nav">
+    <div class="site-nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo.png" alt="SoulWhispers" />
+      </a>
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#home">Home</a>
+        <a href="#oele">Öle</a>
+        <a href="#business">Business</a>
+        <a href="team/">Team</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
     </div>
   </header>
 
-  <!-- ============ WORUM ES GEHT ============ -->
-  <section class="about" aria-labelledby="about-heading">
-    <div class="about-inner">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
 
-      <span class="eyebrow">Worum es geht</span>
-      <h2 id="about-heading" class="about-heading">Ätherische Öle, achtsam in euren Alltag gebracht</h2>
+      <div class="hero-text">
+        <img class="hero-logo" src="assets/logo.png" alt="SoulWhispers" />
+        <h1 class="hero-claim">Raum für Gesundheit, mitten im Alltag</h1>
+        <p class="hero-intro">
+          Gesundheit beginnt oft im Kleinen – in den Momenten, die du dir und deiner
+          Familie schenkst. SoulWhispers begleitet dich dabei, mehr Achtsamkeit,
+          Wohlbefinden und Natürlichkeit in euren Alltag zu bringen. Schritt für
+          Schritt, ganz ohne Druck.
+        </p>
+      </div>
+
+      <div class="hero-media">
+        <figure class="photo">
+          <img
+            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop"
+            alt="Familie beim gemeinsamen Spaziergang im Freien"
+            loading="lazy"
+            onerror="this.parentElement.classList.add('photo--fallback'); this.remove();"
+          />
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ÖLE ============ -->
+  <section class="oele" id="oele">
+    <div class="section-inner">
+
+      <div class="section-heading">
+        <span class="eyebrow">Öle</span>
+        <h2>Ätherische Öle, achtsam in euren Alltag gebracht</h2>
+      </div>
+
+      <div class="oele-intro">
+        <div class="oele-media">
+          <figure class="photo primary">
+            <img
+              src="https://images.unsplash.com/photo-1500673922987-e212871fec22?q=80&w=1200&auto=format&fit=crop"
+              alt="Lavendelfeld in warmem Licht"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('photo--fallback'); this.remove();"
+            />
+          </figure>
+          <figure class="photo secondary">
+            <img
+              src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=800&auto=format&fit=crop"
+              alt="Ätherische Öle in kleinen Flaschen"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('photo--fallback'); this.remove();"
+            />
+          </figure>
+        </div>
+        <div class="oele-text">
+          <p>
+            doTERRA-Öle begleiten euch durch ganz unterschiedliche Momente des Tages –
+            beim Kochen, beim Entspannen, beim Zur-Ruhe-Kommen am Abend. Es geht nicht
+            um große Veränderungen, sondern um kleine, achtsame Rituale, die sich
+            leicht in euren Alltag einfügen.
+          </p>
+        </div>
+      </div>
 
       <div class="about-grid">
 
@@ -77,17 +127,124 @@
     </div>
   </section>
 
+  <!-- ============ ABLAUF / SCHRITTE ============ -->
+  <!-- Platzhaltertexte – werden durch finale Inhalte ersetzt -->
+  <section class="steps" id="ablauf">
+    <div class="section-inner">
+
+      <div class="section-heading">
+        <span class="eyebrow">Wie geht's weiter</span>
+        <h2>Öle bestellt – wie geht's weiter?</h2>
+      </div>
+
+      <div class="steps-grid">
+
+        <div class="step-card">
+          <span class="step-number">01</span>
+          <h3>Bestellung bestätigt</h3>
+          <p>Deine Bestellung ist unterwegs. Du bekommst eine Bestätigung und erste Infos, was dich erwartet.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">02</span>
+          <h3>Willkommen in der Gruppe</h3>
+          <p>Du wirst in unsere WhatsApp-Gruppe eingeladen – für Austausch, Fragen und Inspiration im Alltag.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">03</span>
+          <h3>Erste Schritte mit deinen Ölen</h3>
+          <p>Wir zeigen dir, wie du deine Öle einfach und sicher in euren Alltag integrierst.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">04</span>
+          <h3>Persönliche Begleitung</h3>
+          <p>Du bist nicht allein – wir begleiten dich mit Tipps und Austausch, ganz in deinem Tempo.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUSINESS ============ -->
+  <!-- Platzhaltertext – wird durch finale Inhalte ersetzt -->
+  <section class="business" id="business">
+    <div class="section-inner business-grid">
+
+      <div class="business-media">
+        <figure class="photo">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop"
+            alt="Gemeinschaft im Austausch, warmherzig und offen"
+            loading="lazy"
+            onerror="this.parentElement.classList.add('photo--fallback'); this.remove();"
+          />
+        </figure>
+      </div>
+
+      <div class="business-text">
+        <span class="eyebrow">Business</span>
+        <h2>Business mit SoulWhispers</h2>
+        <p>
+          Vielleicht ist aus deiner Begeisterung für die Öle schon mehr geworden als
+          ein Hobby. Mit SoulWhispers startest du in einem Team, das dich ehrlich
+          begleitet – ohne Druck, dafür mit viel Raum für deinen eigenen Weg.
+        </p>
+
+        <div class="business-points">
+          <div>
+            <h3>Flexibilität</h3>
+            <p>Du gestaltest dein Tempo selbst – passend zu deinem Familienalltag.</p>
+          </div>
+          <div>
+            <h3>Gemeinschaft</h3>
+            <p>Ein Team, das sich gegenseitig unterstützt und ehrlich austauscht.</p>
+          </div>
+          <div>
+            <h3>Weiterentwicklung</h3>
+            <p>Wachse an dem, was dir wichtig ist – persönlich und fachlich.</p>
+          </div>
+        </div>
+
+        <a class="text-link" href="team/">Lerne unser Team kennen →</a>
+      </div>
+
+    </div>
+  </section>
+
   <!--
     ============ MITGLIEDERBEREICH (Phase 2) ============
-    Bewusst strukturell vorbereitet, aber in Phase 1 nicht sichtbar
+    Bewusst strukturell vorbereitet, aber weiterhin nicht sichtbar
     und ohne Verlinkung. Für Phase 2 einfach `hidden` entfernen und
     Inhalt ergänzen.
   -->
   <section id="mitgliederbereich" class="future-section" hidden aria-hidden="true"></section>
 
+  <!-- ============ KONTAKT ============ -->
+  <!-- Platzhalter-E-Mail – bitte durch echte Adresse ersetzen -->
+  <section class="contact" id="kontakt">
+    <div class="contact-inner">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Lass uns sprechen</h2>
+      <p>
+        Du hast Fragen rund um SoulWhispers, unsere Öle oder wie du dabei
+        sein kannst? Schreib uns gerne.
+      </p>
+      <a class="text-link contact-email" href="mailto:hallo@soulwhispers.de">hallo@soulwhispers.de</a>
+    </div>
+  </section>
+
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
-    <span class="footer-word">Soul<span class="footer-word-accent">Whispers</span></span>
+    <img class="footer-logo" src="assets/logo.png" alt="SoulWhispers" />
+    <nav class="footer-nav" aria-label="Footer-Navigation">
+      <a href="#home">Home</a>
+      <a href="#oele">Öle</a>
+      <a href="#business">Business</a>
+      <a href="team/">Team</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
     <p class="footer-copy">&copy; 2026 SoulWhispers</p>
   </footer>
 
